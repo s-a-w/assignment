@@ -3,7 +3,7 @@
      background: #1faed6;
      color: #fff;
 }
- .flex-wrap {
+ .flex-wrapper {
      display: flex;
      align-items: center;
 }
@@ -224,7 +224,6 @@
  .feed-list a:active, .feed-list a:hover {
      background-color: #fff;
      color: #20add4;
-     border-top: none;
 }
  .inner-content-wrap {
      flex-grow: 1;
@@ -290,8 +289,12 @@
      padding: 0 10px;
 }
  .comment-wrap ul {
-     flex-basis: 240px;
+     flex-basis: 300px;
      justify-content: space-between;
+}
+.comment-wrap li {
+     text-align: center;
+     flex-basis: calc(100%/3);
 }
  .inner-content-wrap .comment-wrap a {
      display: block;
@@ -401,7 +404,7 @@
  .right-section-banner {
      margin: 15px 0;
 }
- .right-section-list .flex-wrap {
+ .right-section-list .flex-wrapper {
      justify-content: space-between;
 }
  .right-section-list>li {
